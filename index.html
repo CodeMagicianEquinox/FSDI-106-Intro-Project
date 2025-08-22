@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+     <link rel="stylesheet" href="style/app.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="left-section">
+            <button class="show-hide-btn">SHOW/HIDE</button>
+            
+            <div class="task-card">
+                <button class="task-details-btn">SHOW/HIDE DETAILS</button>
+                <h3>Testing</h3>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-header">
+                <h2>Task Manager</h2>
+                <p>Form</p>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" value="Testing">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="color">Color</label>
+                    <input type="color" id="color" class="color-input" value="#000000">
+                </div>
+
+                <div class="form-group">
+                    <label for="start-date">Start Date</label>
+                    <input type="datetime-local" id="start-date" class="datetime-input" value="2025-08-22T18:54">
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option value="in-progress">In progress</option>
+                        <option value="pending">Pending</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Budget</label>
+                    <div class="budget-container">
+                        <input type="number" id="budget" class="budget-input" placeholder="Enter budget">
+                        <button type="button" class="budget-dropdown">▼</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="add-task-btn">ADD TASK</button>
+            </form>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="./scripts/task.js"></script>
+<script src="./scripts/app.js"></script>
+</body>
+</html>
